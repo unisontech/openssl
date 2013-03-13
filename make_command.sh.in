@@ -1,0 +1,7 @@
+#!/bin/bash
+
+ANDROID_DEV="${ANDROID_SYSROOT}/usr" \
+CROSS_TOP="${IOS_DEVELOPER_ROOT}" \
+CROSS_SDK="${IOS_TARGET}${IOS_SDK_VERSION}.sdk" \
+make && make install
+
