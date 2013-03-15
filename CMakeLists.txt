@@ -19,7 +19,7 @@ if (UNIX)
     string(REGEX REPLACE "-Wextra" "" OPENSSL_CFLAGS ${CMAKE_C_FLAGS})
     set(OPENSSL_LDFLAGS ${CMAKE_MODULE_LINKER_FLAGS})
 
-    if (${CMAKE_SYSTEM_NAME} STREQUAL "Android")
+    if (${PLATFORM} STREQUAL "Android")
         set(OPENSSL_TARGET_PLATFORM android)
         foreach(includeDir ${ANDROID_SYSTEM_INCLUDE_DIRS})
             set(OPENSSL_ANDROID_INCLUDES "${OPENSSL_ANDROID_INCLUDES} -I${includeDir}")
