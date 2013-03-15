@@ -1,6 +1,6 @@
 # the name of your project
 project(openssl)
-cmake_minimum_required(VERSION 2.8.10)
+cmake_minimum_required(VERSION 2.8)
 
 include(ExternalProject)
 
