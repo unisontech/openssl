@@ -44,11 +44,6 @@ if (UNIX)
     set(CONFIGURE_COMMAND bash ${CMAKE_CURRENT_BINARY_DIR}/configure_command.sh)
     set(BUILD_COMMAND bash ${CMAKE_CURRENT_BINARY_DIR}/make_command.sh)
 
-    message(STATUS "SOURCE_DIR = ${SOURCE_DIR}")
-    message(STATUS "BINARY_DIR = ${BINARY_DIR}")
-    message(STATUS "CONFIGURE_COMMAND = ${CONFIGURE_COMMAND}")
-    message(STATUS "BUILD_COMMAND = ${BUILD_COMMAND}")
-
     ExternalProject_Add(openssl
         SOURCE_DIR ${SOURCE_DIR}
         BINARY_DIR ${BINARY_DIR}
